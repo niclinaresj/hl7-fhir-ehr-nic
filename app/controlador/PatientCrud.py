@@ -36,4 +36,4 @@ def GetPatientByIdentifier(patientSystem,patientValue):
             return "success", patient
         return "notFound", None
     except Exception as e:
-        return f"notFound", None
+        return f"error: {str(e)}", None
